@@ -1,0 +1,25 @@
+# THE FOLLOWING PATHS ARE SET IN /etc/paths
+# /usr/bin, /bin, /usr/sbin, /sbin
+
+# Adds the "$HOME/bin" folder to path for sourcing
+export PATH=$HOME/bin:$PATH
+
+# Add common path locations 
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
+
+# GIT
+export PATH=/usr/local/git/bin:$PATH
+
+# SVN
+#export PATH=/opt/subversion/bin:$PATH
+
+# MySQL
+export PATH=$PATH:/usr/local/mysql/bin
+
+# DOCKER
+export DOCKER_HOST=tcp://127.0.0.1:4243
+
+# RBENV
+export RBENV_ROOT=/usr/local/var/rbenv
+
