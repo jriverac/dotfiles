@@ -1,0 +1,47 @@
+
+# sets vi to use vim
+alias vi=vim
+
+# set c be the git log command with some pretty formatting
+alias c="git log --graph --pretty=format:'%an: %s - %Cred%h%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+# listen porsts
+alias ports="sudo lsof -iTCP -sTCP:LISTEN -P"
+
+# flush DNS
+alias flushdns="dscacheutil -flushcache; echo 'Flushed DNS, btw here is your hosts file just in case:'; cat /etc/hosts"
+
+# Personal settings
+alias l="ls -F"
+alias ll="ls -al"
+
+# Using rbenv so alias for bundle exec
+alias be="bundle exec"
+
+# Add aliases for folders and/or repos
+alias dev="cd ~/dev"
+
+# Opens a todo list, displayed in desktop with GeekTool
+alias td="cd ~/TO\ DOs
+subl ."
+
+# some git aliases
+alias gst="git status"
+alias gc="git commit"
+alias gca="git commit -a"
+alias ga="git add"
+alias gco="git checkout"
+alias gb="git branch"
+alias gm="git merge"
+alias gpr="git pull --rebase"
+alias gd="git diff"
+
+# run Rails app in SSL mode in localhost.  Requires modification of server script and self signed cert
+alias secure_rails='bundle exec ruby script/secure_rails server'
+
+# Run multiple instances of the same rails app
+alias rs="rails s -P tmp/pids/server2.pid"
+
+# show/hide hidden files.
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
